@@ -51,8 +51,8 @@ export interface NavigationProps {
 
 export const Navigation: FC<NavigationProps> = ({ paths }) => {
 
-    const pathLis = paths.length && paths.map(path => (
-        <li><Link to={path.path}>{path.name}</Link></li>
+    const pathLis = paths.length && paths.map((path, index) => (
+        <li key={index}><Link to={path.path}>{path.name}</Link></li>
     ));
 
     return (

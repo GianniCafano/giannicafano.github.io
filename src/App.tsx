@@ -6,12 +6,13 @@ import {
 } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { Home } from './components/pages/Home';
+import { NotFound } from './components/pages/404';
 
 const App: FC = () => {
   const paths = [
     {path:'/', name:'Home'},
     {path:'/about', name:'About'},
-    {path: '/contact', name: 'Contact'}
+    {path: '/contact', name: 'Contact'},
   ];
 
   return (
@@ -27,7 +28,7 @@ const App: FC = () => {
               <About />
             </Route> */}
             <Route path="*">
-              404
+              <NotFound />
             </Route>
           </Switch>
         </Router>
