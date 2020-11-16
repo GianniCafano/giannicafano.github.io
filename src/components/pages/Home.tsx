@@ -11,7 +11,7 @@ const Hero = styled.main`
 
 const HeroTitle = styled.h1`
     text-align: center;
-    margin: 0;
+    margin: -70px 0 0 0;
     font-size: 2.5em;
 `;
 
