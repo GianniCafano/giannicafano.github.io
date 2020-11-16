@@ -1,21 +1,29 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Varela Round', sans-serif;
-    background-color: #5CDB95;
-    color: white;
-  }
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
 
-  main {
-      padding: 0 15px;
-  }
+    html, 
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Varela Round', sans-serif;
+        background-color: #1d2d50;
+        color: white;
+    }
 
-  a {
-      color: #05386B;
-  }
+    main {
+        padding: 0 15px;
+    }
+
+    a {
+        color: white;
+    }
 `;
 
 export default GlobalStyles;

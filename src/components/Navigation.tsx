@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Header = styled.header`
     width: 100%;
-    background-color: #5CDB95;
+    background-color: #1d2d50;
     height: 70px;
     nav {
         height: 100%;
@@ -18,16 +18,24 @@ const Header = styled.header`
             align-items: center;
             justify-content: flex-end;
 
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+            }
+
             li {
                 display: flex;
                 height: 100%;
                 align-items: center;
                 font-size: 20px;
                 &:hover {
-                    background-color: #05386B;
+                    background-color: white;
                     a {
-                        color: white;
+                        color: #1d2d50;
                     }
+                }
+                @media screen and (max-width: 768px) {
+                    flex: auto;
+                    justify-content: center;
                 }
                 a {
                     padding: 0 1.5rem;
